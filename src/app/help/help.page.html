@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ayudar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides>
+    <ion-slide>
+      <ion-list>
+        <ion-radio-group [(ngModel)]="option">
+          <ion-list-header>
+            ¿Cómo quieres que quede registrado tu apoyo?
+          </ion-list-header>
+
+          <ion-item>
+            <ion-label>Anónimo</ion-label>
+            <ion-radio value="0"></ion-radio>
+          </ion-item>
+  
+          <ion-item>
+            <ion-label>Alias</ion-label>
+            <ion-radio value="1"></ion-radio>
+          </ion-item>
+  
+          <ion-item>
+            <ion-label>Facebook</ion-label>
+            <ion-radio value="2"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+
+      </ion-list>
+
+      <ion-list padding *ngIf="option != 0">
+        <ion-button  color="secondary" expand="block" *ngIf="option == 1">
+          <ion-icon slot="start" name="person"></ion-icon>
+          Ingresar alias
+        </ion-button>
+        <ion-button  color="secondary" expand="block" *ngIf="option == 2">
+          <ion-icon slot="start" name="logo-facebook"></ion-icon>
+          Facebook
+        </ion-button>
+      </ion-list>
+
+      <div padding class="btn-next">
+        <ion-row>
+          <ion-col>
+      
+            <ion-button expand="block">
+              Continuar
+              <ion-icon slot="end" name="arrow-forward"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </div>
+
+    </ion-slide>
+  
+    <ion-slide>
+      <h1>Slide 2</h1>
+    </ion-slide>
+  
+    <ion-slide>
+      <h1>Slide 3</h1>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

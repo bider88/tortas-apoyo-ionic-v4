@@ -1,0 +1,22 @@
+ion-slides {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+.swiper-slide {
+  display: block;
+  align-items: unset !important;
+}
+
+.btn-next {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0px;
+
+  ion-row {
+    width: 100%;
+  }
+}

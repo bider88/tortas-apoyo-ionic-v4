@@ -1,0 +1,7 @@
+{
+  "name": "tortas-v4",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
